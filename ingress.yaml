@@ -14,3 +14,10 @@ spec:
             name: wp-wordpress
             port:
               number: 80
+      - path: /wp-admin
+        pathType: Exact
+        backend:
+          service:
+            name: wp-wordpress
+            port:
+              number: 80
